@@ -14,7 +14,7 @@ COPY . .
 # App Runner expects this
 ENV PORT=3000
 
-# Expose port
+# Expose ports
 EXPOSE 3000
 
 # Start app
