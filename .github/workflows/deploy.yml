@@ -41,7 +41,7 @@ jobs:
         run: |
           docker push ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:latest
 
-      - name: Deploy to App Runner
-        run: |
-          aws apprunner start-deployment \
-            --service-arn ${{ secrets.APP_RUNNER_SERVICE_ARN }}
+      # - name: Deploy to App Runner
+      #   run: |
+      #     aws apprunner start-deployment \
+      #       --service-arn ${{ secrets.APP_RUNNER_SERVICE_ARN }}
